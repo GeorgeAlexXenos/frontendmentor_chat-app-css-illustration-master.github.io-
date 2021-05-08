@@ -1,0 +1,396 @@
+/*  */
+:root {
+  /* Primary
+Text
+(sub-heading at the top of the app UI) */
+  --paleViolet: hsl(276, 100%, 81%);
+  /* (chat on the left) */
+  --moderateViolet: hsl(276, 55%, 52%);
+  /* (chat on the right) */
+  --desaturatedDarkViolet: hsl(271, 15%, 43%);
+  /* (placeholder text) */
+  --grayishBlue: hsl(206, 6%, 79%);
+  /* GrayishBlue Violet (main heading) */
+  --veryDarkDesaturated: hsl(271, 36%, 24%);
+  /* Violet (paragraph) */
+  --darkGrayish: hsl(270, 7%, 64%); /* Gradients */
+  /* These two colors are the vibrant background colors you see throughout the design and are applied as a linear; gradient: */
+  --lightMagenta: #e942ff;
+  --lightViolet: #8838ff;
+  /* Secondary */
+  --white: hsl(0, 0%, 100%);
+  /* Violet (app background) */
+  --lightGrayish: hsl(270, 20%, 96%);
+  /* (submit button background) */
+  --deryDarkDesaturated: hsl(271, 36%, 24%);
+  /* radio button outline) */
+  --violetVioletViolet: hsl(289, 100%, 72%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -2;
+}
+.container {
+  min-width: 100vw;
+  height: 85vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+/* header  */
+header {
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 2.8rem;
+  color: var(--veryDarkDesaturated);
+}
+
+header p {
+  margin: 1.3rem auto 3rem;
+  line-height: 1.9rem;
+  width: 300px;
+  color: var(--darkGrayish);
+}
+
+/* mobile  */
+.mobile {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lightGrayish);
+  border-radius: 2.5rem;
+  border: 1rem solid rgb(253, 253, 253);
+  box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.199);
+  transition: all 350ms ease-in-out;
+}
+.header {
+  position: relative;
+  width: 100%;
+  color: white;
+  padding: 2rem 0.8rem 0.7rem;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(136, 56, 255, 1) 0%,
+    rgba(233, 66, 255, 1) 100%
+  );
+  border-radius: 1rem 1rem 0.5rem 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header::after {
+  content: "";
+  width: 140px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  border-radius: 0 0 0.7rem 0.7rem;
+  top: -2px;
+  right: 50%;
+  transform: translateX(50%);
+}
+.header img:last-of-type {
+  width: 39px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.header img:first-of-type {
+  height: 13px;
+  margin-right: 3px;
+}
+.header h2 {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.header p {
+  font-weight: 400;
+  font-size: 0.5rem;
+}
+.name {
+  width: 100%;
+  margin-left: 1rem;
+  display: grid;
+  grid-template-columns: 95% 5%;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "fullname dots"
+    "details dots";
+}
+.fullname {
+  grid-area: fullname;
+}
+.details {
+  grid-area: details;
+}
+.dots {
+  align-self: center;
+  grid-area: dots;
+  display: grid;
+}
+.dots_icons {
+  margin: auto;
+  width: 3px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+.dots_icons::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  transform: translateY(-125%);
+}
+.dots_icons::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  transform: translateY(23%);
+}
+.left {
+  background-color: #ede5f3;
+  color: var(--moderateViolet);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem 0.7rem;
+}
+.rightmessages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.right {
+  color: var(--desaturatedDarkViolet);
+  background-color: white;
+  margin: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.2rem 0.4rem 0.4rem;
+  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.089);
+}
+.images {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0.7rem;
+  gap: 0.5rem;
+}
+.messages img {
+  width: 45px;
+  display: inline-block;
+  border-radius: 0.8rem;
+}
+.message {
+  font-size: 0.6rem;
+  width: 9rem;
+}
+
+/* body background */
+.bg {
+  position: absolute;
+  top: -9.8rem;
+  left: -50%;
+  width: 100vw;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(136, 56, 255, 1) 0%,
+    rgba(233, 66, 255, 1) 100%
+  );
+  z-index: -1;
+  border-radius: 0 0 35rem 0;
+}
+
+/* ------------input types------------ */
+.radio_group {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 195px;
+  padding: 0.7rem;
+}
+label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.55rem;
+  height: 2.5rem;
+  background: linear-gradient(
+    -90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(136, 56, 255, 1) 0%,
+    rgba(233, 66, 255, 1) 100%
+  );
+  padding-left: 1.7rem;
+  border-radius: 0.7rem 0.7rem 0.7rem 0.2rem;
+  cursor: pointer;
+}
+label:last-of-type {
+  margin-top: 0.6rem;
+}
+.radio input[type="radio"] {
+  display: none;
+}
+.radio span {
+  height: 12px;
+  width: 12px;
+  border: 0.8px solid white;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: 1.2rem;
+}
+.radio span:after {
+  content: "";
+  height: 9px;
+  width: 9px;
+  background-color: white;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  transition: 250ms ease-in-out 0s;
+}
+
+.radio input[type="radio"]:checked ~ span:after {
+  transform: translate(-50%, -50%) scale(1);
+}
+label em {
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-style: normal;
+  position: absolute;
+  right: 1.8rem;
+}
+
+.input_text {
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+input[type="text"] {
+  font-size: 0.7rem;
+  border-radius: 1.1rem 1.1rem 1.1rem 1.1rem;
+  border: none;
+  outline: none;
+  padding: 0.9rem 0 0.5rem 1.2rem;
+  width: 100%;
+}
+
+.input_text button {
+  width: 29px;
+  height: 29px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--veryDarkDesaturated);
+  position: absolute;
+  right: 16px;
+  top: 14px;
+}
+.attribution {
+  font-size: 0.6rem;
+  position: absolute;
+  bottom: -450px;
+  padding: 0.8rem;
+}
+
+/* ------------media quaries------------ */
+@media screen and (min-width: 940px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile:hover {
+    transform: scale(1.03);
+  }
+  header {
+    width: 30%;
+    margin-left: 10rem;
+  }
+  h1 {
+    text-align: left;
+  }
+  header p {
+    width: 100%;
+    text-align: left;
+  }
+  .bg {
+    position: absolute;
+    top: -3rem;
+    left: -15.5%;
+    width: 40vw;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(136, 56, 255, 1) 0%,
+      rgba(233, 66, 255, 1) 100%
+    );
+    z-index: -1;
+    border-radius: 0 0 35rem 35rem;
+  }
+  header {
+    position: relative;
+    -webkit-animation-name: myAnimate;
+    animation-name: myAnimate;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    z-index: -999;
+  }
+}
+
+/* ------------animation------------ */
+@-webkit-keyframes myAnimate {
+  from {
+    top: 0;
+    left: -800px;
+  }
+  to {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes myAnimate {
+  from {
+    top: 0;
+    left: -800px;
+  }
+  to {
+    top: 0;
+    left: 0;
+  }
+}
