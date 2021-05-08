@@ -300,6 +300,7 @@ label em {
   display: flex;
   justify-content: space-between;
   position: relative;
+  margin-bottom: 1rem;
 }
 input[type="text"] {
   font-size: 0.7rem;
