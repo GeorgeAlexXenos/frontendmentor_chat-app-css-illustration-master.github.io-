@@ -44,7 +44,7 @@ body {
 }
 .container {
   min-width: 100vw;
-  height: 100vh;
+  height: 90vh;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -76,7 +76,7 @@ header p {
 /* mobile  */
 .mobile {
   width: 300px;
-  min-height: 600px;
+  min-height: 615px;
   max-height: 690px;
   display: flex;
   flex-direction: column;
