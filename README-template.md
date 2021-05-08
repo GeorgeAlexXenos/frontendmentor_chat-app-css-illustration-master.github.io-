@@ -11,10 +11,9 @@ Users should be able to:
 - View the optimal layout for the component depending on their device's screen size
 - **Bonus**: See the chat interface animate on the initial load
 
-### Links
+### Link
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+[live site URL here](https://georgealexxenos.github.io/frontendmentor_chat-app-css-illustration-master.github.io-/)
 
 ## My process
 
