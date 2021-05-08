@@ -76,6 +76,7 @@ header p {
 /* mobile  */
 .mobile {
   width: 300px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   background-color: var(--lightGrayish);
@@ -202,6 +203,7 @@ header p {
 }
 .messages img {
   width: 45px;
+  height: 45px;
   display: inline-block;
   border-radius: 0.8rem;
 }
