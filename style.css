@@ -44,7 +44,7 @@ body {
 }
 .container {
   min-width: 100vw;
-  height: 85vh;
+  height: 100vh;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -77,7 +77,7 @@ header p {
 .mobile {
   width: 300px;
   min-height: 600px;
-  max-height: 630px;
+  max-height: 690px;
   display: flex;
   flex-direction: column;
   background-color: var(--lightGrayish);
@@ -310,7 +310,7 @@ input[type="text"] {
   width: 100%;
 }
 
-.input_text button {
+.input_text > button {
   width: 29px;
   height: 29px;
   border: none;
