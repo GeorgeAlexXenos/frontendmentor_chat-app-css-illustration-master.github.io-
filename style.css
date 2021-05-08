@@ -76,7 +76,7 @@ header p {
 /* mobile  */
 .mobile {
   width: 300px;
-  min-height: 580px;
+  min-height: 565px;
   max-height: 620px;
   display: flex;
   flex-direction: column;
@@ -181,7 +181,7 @@ header p {
   color: var(--moderateViolet);
   border-radius: 0.5rem;
   padding: 0.5rem 0.5rem;
-  margin: 0.5rem 0.7rem;
+  margin: 0.5rem 0 0.5rem 0.7rem;
 }
 .rightmessages {
   display: flex;
@@ -191,10 +191,13 @@ header p {
 .right {
   color: var(--desaturatedDarkViolet);
   background-color: white;
-  margin: 0.5rem 0.7rem;
+  margin: 0.6rem 0.7rem;
   border-radius: 0.5rem;
   padding: 0.4rem 0.2rem 0.4rem 0.4rem;
   box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.089);
+}
+.right:last-of-type {
+  margin: 0 0.7rem;
 }
 .images {
   display: flex;
