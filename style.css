@@ -76,8 +76,9 @@ header p {
 /* mobile  */
 .mobile {
   width: 300px;
-  min-height: 615px;
+  min-height: 605px;
   max-height: 690px;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   background-color: var(--lightGrayish);
