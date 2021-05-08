@@ -76,9 +76,9 @@ header p {
 /* mobile  */
 .mobile {
   width: 300px;
-  min-height: 605px;
+  min-height: 600px;
   max-height: 690px;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   display: flex;
   flex-direction: column;
   background-color: var(--lightGrayish);
@@ -301,7 +301,7 @@ label em {
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 input[type="text"] {
   font-size: 0.7rem;
