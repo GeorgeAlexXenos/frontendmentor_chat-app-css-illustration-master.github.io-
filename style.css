@@ -203,8 +203,11 @@ header p {
   display: flex;
   justify-content: flex-end;
   margin-right: 0.7rem;
-  gap: 0.5rem;
 }
+.images img {
+  margin-left: 0.5rem;
+}
+
 .messages img {
   width: 45px;
   height: 45px;
